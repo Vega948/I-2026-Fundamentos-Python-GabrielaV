@@ -18,6 +18,10 @@ print("mi nombre es" :{nombre})
 print ("mi edad es" : {edad} )
 print ("mi anno_de_nacimiento es":, {anno_de_nacimiento})
 
+
+
+
+
 #inicializar variables
 soy_yo = nombre == "Gabriela" and edad == 18
 no_soy_yo = not(nombre == "Gabriela" and edad == 18)
