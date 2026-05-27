@@ -33,3 +33,4 @@ print (soy_yo)
 print (no_soy_yo)
 print (quizas_soy_yo)
 soy_yo = (nombre == "Gabriela" and edad == 18)
+#hola
