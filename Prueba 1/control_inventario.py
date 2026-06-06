@@ -11,7 +11,7 @@ else:
     print("la informacion que registró es inválida")
 
 print(input("Su producto ha sido registrado. ¿Desea registrar otro?"[Si]))
-while si 
+
 
 #cálculo del total
 total = precio * cantidad 
