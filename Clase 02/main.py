@@ -14,9 +14,9 @@ print(anno_de_nacimiento)
 mayor_de_edad:bool = edad >= 18
 
 #imprimir nombre,edad y año de nacimiento
-print("mi nombre es" :{nombre})
-print ("mi edad es" : {edad} )
-print ("mi anno_de_nacimiento es":, {anno_de_nacimiento})
+print(f"mi nombre es :{nombre}")
+print (f"mi edad es : {edad}")
+print (f"mi anno_de_nacimiento es:, {anno_de_nacimiento}")
 
 
 

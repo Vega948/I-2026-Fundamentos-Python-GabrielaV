@@ -1,19 +1,28 @@
-#Registro de productos
-print("Ingrese la información de los productos que desea comprar")
-("print(input("Nombre del producto: ")")
-precio = int(input("ingrese el precio del produto: "))
-cantidad = int(input("ingrese la cantidad de productos: "))
+print("Bienvindo al Supermercado")
+total_general = 0
 
-#cantidad miníma de productos
-if cantidad >= 1 and precio >= 1 : 
-    print("La información es válida")
-else:
-    print("la informacion que registró es inválida")
+while True:
+    print("Ingrese la información de los productos que desea comprar")
 
-print(input("Su producto ha sido registrado. ¿Desea registrar otro?"[Si]))
+    producto = input("Nombre del producto: ")
+    precio = int(input("Ingrese el precio del producto: "))
+    cantidad = int(input("Ingrese la cantidad de productos: "))
 
+    if cantidad < 1 or precio < 1:
+        print("La informacion que registro es invalida")
+    else:
+        total = precio * cantidad
+        total_general += total
 
-#cálculo del total
-total = precio * cantidad 
-print("El total a pagar es:", total)
+        print("Producto:", producto)
+        print("Precio:", precio)
+        print("Cantidad:", cantidad)
+        print("Total a pagar", total)
 
+    opcion = int(input("Ingrese 1 para registrar otro producto o 2 para finalizar la compra: "))
+
+    if opcion == 2:
+        break
+
+print("===== TOTAL A PAGAR ====")
+print("Total a pagar:", total_general)
