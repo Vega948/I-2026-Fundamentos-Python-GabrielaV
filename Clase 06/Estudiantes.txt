@@ -1,3 +1,18 @@
 Nombre:   Gabi
 Carnet:   132464
 Nota final:  9.0
+Nombre:   Gabriela Vega
+Carnet:   7492759
+Nota final:  90.0
+Nombre:   Gabi
+Carnet:   1233857
+Nota final:  98.0
+Nombre:   Carlos
+Carnet:   785935
+Nota final:  78.0
+Nombre:   Juan
+Carnet:   864576
+Nota final:  56.0
+Nombre:   Cris
+Carnet:   8694786
+Nota final:  84.0
