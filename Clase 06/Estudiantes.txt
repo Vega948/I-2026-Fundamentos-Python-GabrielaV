@@ -16,3 +16,6 @@ Nota final:  56.0
 Nombre:   Cris
 Carnet:   8694786
 Nota final:  84.0
+Nombre:   juan
+Carnet:   776876
+Nota final:  87.0
