@@ -19,15 +19,14 @@ while True:
         titulo= input("Titulo: ")
         artista=input("Artista: ")
         album=input("Album: ")
-        genero=input("Genero: ")5
+        genero=input("Genero: ")
         año=input("Año de lanzamiento: ")
         playlist= input("Playlist: ")
         favorita=input("¿Es favorita? (si\no): ").lower()
         if favorita == "si":
             favoritas += 1
-        
-        #cancion registrada
-        
+    if opcion== "2":
+        print("\n---CANCIÓN REGISTRADA---")
         print("Titulo:", titulo)
         print("Artista:", artista)
         print("Album:", album)
@@ -35,6 +34,13 @@ while True:
         print("Año:", año)
         print("Playlist:", playlist)
         print("Favorita:", favorita)
+    if opcion== "3":
+        buscar = input("Ingrese el nombre de la canción que desea buscar: ")
+        if buscar.lower() == titulo.lower():
+            print("cancion encontrada: ", titulo, "de", artista, "Del album", album, "del año", año)
+    if opcion== "4":
+        
+
 
         archivo = open("Proyecto\Canciones.txt", "a")
         archivo.write(f"Título: {titulo}\n")
