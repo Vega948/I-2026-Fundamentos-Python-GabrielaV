@@ -1,4 +1,22 @@
 print("BIENVENIDO A MUSICPY - SISTEMA DE REGISTRO MUSICAL")
+class Cancion:
+    def __init__(self, titulo, artista, album, genero, año, playlist, favorita):
+        self.titulo = titulo
+        self.artista = artista
+        self.album = album
+        self.genero = genero
+        self.año = año
+        self.playlist = playlist
+        self.favorita = favorita
+
+    def mostrar_informacion(self):
+        print("Título:", self.titulo)
+        print("Artista:", self.artista)
+        print("Álbum:", self.album)
+        print("Género:", self.genero)
+        print("Año de lanzamiento:", self.año)
+        print("Playlist:", self.playlist)
+        print("¿Es favorita?:", self.favorita)
 
 canciones = []
 favoritas = 0
@@ -39,6 +57,7 @@ while True:
         if buscar.lower() == titulo.lower():
             print("cancion encontrada: ", titulo, "de", artista, "Del album", album, "del año", año)
     if opcion== "4":
+        eliminar = input("seleccione la canción a eliminar: ")
         
 
 
