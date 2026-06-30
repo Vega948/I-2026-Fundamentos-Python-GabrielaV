@@ -31,7 +31,8 @@ while True:
     print("5. Salir")
     
     opcion = input("Seleccione una opcion: ")
-    
+
+    #Registro de canciones
     if opcion== "1":
         print("\n---AGREGAR CANCION---")
         titulo= input("Titulo: ")
@@ -43,24 +44,43 @@ while True:
         favorita=input("¿Es favorita? (si\no): ").lower()
         if favorita == "si":
             favoritas += 1
+
+        #Canciones registradas
     if opcion== "2":
         print("\n---CANCIÓN REGISTRADA---")
-        print("Titulo:", titulo)
-        print("Artista:", artista)
-        print("Album:", album)
-        print("Genero:", genero)
-        print("Año:", año)
-        print("Playlist:", playlist)
-        print("Favorita:", favorita)
+        print("Titulo:", str(titulo))
+        print("Artista:", str(artista))
+        print("Album:", str(album))
+        print("Genero:", str(genero))
+        print("Año:", str(año))
+        print("Playlist:", str(playlist))
+        print("Favorita:", str(favorita))
+       
+       #Busqueda de canciones 
     if opcion== "3":
         buscar = input("Ingrese el nombre de la canción que desea buscar: ")
         if buscar.lower() == titulo.lower():
             print("cancion encontrada: ", titulo, "de", artista, "Del album", album, "del año", año)
+
+        #Eliminar canciones
     if opcion== "4":
         eliminar = input("seleccione la canción a eliminar: ")
-        
+        archivo = open("Proyecto\Canciones.txt", "r")
+        canciones = archivo.readlines()
+        archivo.close()
+        encontrado = False
 
+        archivo = open("Proyecto\Canciones.txt", "w")
 
+        for linea in canciones:
+            if eliminar.lower() not in linea.lower():
+                archivo.write(linea)
+            else:
+                encontrado = True
+            archivo.close()
+            
+
+        #Guardado de la cancion en el archivo de texto
         archivo = open("Proyecto\Canciones.txt", "a")
         archivo.write(f"Título: {titulo}\n")
         archivo.write(f"Artista: {artista}\n")
@@ -71,8 +91,11 @@ while True:
         archivo.write(f"¿Es favorita?: {favorita}\n")
         archivo.close()
 
-        continuar = input("¿Desea registrar otra canción? (si/no): ")
-        if continuar.lower() == "no":
-            break
+        #Salida del programa
+    if opcion== "5":
+        print("Gracias por usar MusicPy")
+        break
+        
+      
 
 
